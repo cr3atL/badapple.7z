@@ -1,0 +1,71 @@
+{
+  "all_passed": true,
+  "offline_download_and_reassembly": true,
+  "all_downloaded_hashes_verified": true,
+  "all_launchers_validate": true,
+  "portable_generator_native_decode_passed": true,
+  "no_large_ansi_reference_by_default": true,
+  "counter_output_identical": true,
+  "native_reports": {
+    "badapple-3s-24fps": {
+      "archive": "badapple-3s-24fps.zip",
+      "stock_tool": "7z.exe",
+      "exit_code": 0,
+      "frame_count": 72,
+      "elapsed_seconds": 3.056261599995196,
+      "observed_marker_fps": 23.759374160683375,
+      "stdout_bytes": 4718617,
+      "stdout_sha256": "1477e887fb295147bf3be5d6f15109513c9ddfc3114e849c87c6f121c0bfef42",
+      "crc32": "3bd87b9b",
+      "crc_and_size_match_zip": true,
+      "complete_frame_sequence": true,
+      "observer": "Passive blocking reads and hashes. No sleeps, frame scheduling, rendering or playback acknowledgements.",
+      "timing_basis": "stdout marker arrival in this observer, not terminal paint timestamps."
+    },
+    "count-to-three-fast": {
+      "archive": "count-to-three-fast.zip",
+      "stock_tool": "7z.exe",
+      "exit_code": 0,
+      "frame_count": 3,
+      "elapsed_seconds": 0.02057270000659628,
+      "observed_marker_fps": 5575.6899916364655,
+      "stdout_bytes": 196633,
+      "stdout_sha256": "adb893737578f03a658ad993f42680b9647a71a91b73a845c8311e77e570ff2f",
+      "crc32": "ada7c23f",
+      "crc_and_size_match_zip": true,
+      "complete_frame_sequence": true,
+      "observer": "Passive blocking reads and hashes. No sleeps, frame scheduling, rendering or playback acknowledgements.",
+      "timing_basis": "stdout marker arrival in this observer, not terminal paint timestamps."
+    },
+    "count-to-three-paced": {
+      "archive": "count-to-three-paced.zip",
+      "stock_tool": "7z.exe",
+      "exit_code": 0,
+      "frame_count": 3,
+      "elapsed_seconds": 2.7100324999992154,
+      "observed_marker_fps": 1.11744697336973,
+      "stdout_bytes": 196633,
+      "stdout_sha256": "adb893737578f03a658ad993f42680b9647a71a91b73a845c8311e77e570ff2f",
+      "crc32": "ada7c23f",
+      "crc_and_size_match_zip": true,
+      "complete_frame_sequence": true,
+      "observer": "Passive blocking reads and hashes. No sleeps, frame scheduling, rendering or playback acknowledgements.",
+      "timing_basis": "stdout marker arrival in this observer, not terminal paint timestamps."
+    },
+    "portable-authoring-smoke": {
+      "archive": "portable-smoke.zip",
+      "stock_tool": "7z.exe",
+      "exit_code": 0,
+      "frame_count": 6,
+      "elapsed_seconds": 0.021658199999365024,
+      "observed_marker_fps": null,
+      "stdout_bytes": 24601,
+      "stdout_sha256": "e31aae2adfc8b2439b376f9b92f1456231817747cad999663312d2544797ca35",
+      "crc32": "c06282d1",
+      "crc_and_size_match_zip": true,
+      "complete_frame_sequence": true,
+      "observer": "Passive blocking reads and hashes. No sleeps, frame scheduling, rendering or playback acknowledgements.",
+      "timing_basis": "stdout marker arrival in this observer, not terminal paint timestamps."
+    }
+  }
+}

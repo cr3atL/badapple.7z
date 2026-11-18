@@ -1,0 +1,10 @@
+{
+  "width": 24,
+  "height": 20,
+  "frame_count": 3,
+  "uncompressed_bytes": 196633,
+  "crc32": "ada7c23f",
+  "empty_dynamic_blocks_per_frame": 0,
+  "stdout_sha256": "adb893737578f03a658ad993f42680b9647a71a91b73a845c8311e77e570ff2f",
+  "archive_sha256": "5b9a36adf01302252f91f66a1d48fd982394e13f5ff85f6180e54ecbd1a088a9"
+}

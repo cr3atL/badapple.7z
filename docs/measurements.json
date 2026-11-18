@@ -1,0 +1,53 @@
+{
+  "full": {
+    "elapsed_seconds": 219.9231412,
+    "observed_fps": 29.886724,
+    "frame_count": 6572,
+    "stdout_bytes": 1292107801,
+    "stdout_sha256": "bde24ad3698e05ef38d12336f3d1d4373ee74018cf04a7f30cbde1bbbe8c1773",
+    "cpu_total_seconds": {
+      "kernel": 1.75,
+      "user": 211.8125
+    },
+    "stdout_matches_reference": true,
+    "complete_frame_sequence": true,
+    "captured_images_match_reference": true
+  },
+  "counter": {
+    "paced": {
+      "elapsed_seconds": 2.736096799984807,
+      "events": [
+        {
+          "number": 1,
+          "seconds": 0.022075399989262223
+        },
+        {
+          "number": 2,
+          "seconds": 0.930399100005161
+        },
+        {
+          "number": 3,
+          "seconds": 1.8316917000047397
+        }
+      ]
+    },
+    "fast": {
+      "elapsed_seconds": 0.020282599987694994,
+      "events": [
+        {
+          "number": 1,
+          "seconds": 0.017439299990655854
+        },
+        {
+          "number": 2,
+          "seconds": 0.017668699991190806
+        },
+        {
+          "number": 3,
+          "seconds": 0.017826299997977912
+        }
+      ]
+    }
+  },
+  "note": "One-machine observations. stdout marker arrival is not native terminal drawing time; speed is machine and load dependent."
+}

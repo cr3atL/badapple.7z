@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.tools/
+assets/
+downloads/
+verification/
+samples/*.zip
+samples/*.gz
+samples/*.ansi
+samples/*.mono
+samples/*.zip.*
+*.partial
+*.downloading

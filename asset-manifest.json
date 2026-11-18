@@ -1,0 +1,82 @@
+{
+  "repository": "cr3atL/badapple.7z",
+  "release": "v1.0.0",
+  "release_base_url": "https://github.com/cr3atL/badapple.7z/releases/download/v1.0.0",
+  "archives": {
+    "full": {
+      "filename": "badapple-full-384x288-30fps.zip",
+      "width": 384,
+      "height": 288,
+      "frame_count": 6572,
+      "bytes": 3403822975,
+      "sha256": "75e8f29af0092e1223c4ef2b64e240729014e6c48fc0cfc46f5252c147541d20",
+      "assets": [
+        {
+          "filename": "badapple-full-384x288-30fps.zip.001",
+          "bytes": 1073741824,
+          "sha256": "7084731a0111d1285207c3c23647dea37d6b2cb1b71bb4b2e6f00760facfc5cc"
+        },
+        {
+          "filename": "badapple-full-384x288-30fps.zip.002",
+          "bytes": 1073741824,
+          "sha256": "fb17e0615fe7144a2ec3cc40ecbc55e7da1ae6e7886a8f99a296e7cfd058a4f2"
+        },
+        {
+          "filename": "badapple-full-384x288-30fps.zip.003",
+          "bytes": 1073741824,
+          "sha256": "4bcbba5fa137e383b9909cbae7afbbeb7d50d374de1d6e4da4bfd984ce93d5bf"
+        },
+        {
+          "filename": "badapple-full-384x288-30fps.zip.004",
+          "bytes": 182597503,
+          "sha256": "4aeec50c819180e130cd2b209ac76a464c045840fcb68850a149e74bdabca3fc"
+        }
+      ]
+    },
+    "demo": {
+      "filename": "badapple-3s-24fps.zip",
+      "width": 64,
+      "height": 48,
+      "frame_count": 72,
+      "bytes": 34689471,
+      "sha256": "8cb7974af32f0fac8d2ad5293e083e239a1bc302e8b4e5f1cbc831c647a51435",
+      "assets": [
+        {
+          "filename": "badapple-3s-24fps.zip",
+          "bytes": 34689471,
+          "sha256": "8cb7974af32f0fac8d2ad5293e083e239a1bc302e8b4e5f1cbc831c647a51435"
+        }
+      ]
+    },
+    "count-paced": {
+      "filename": "count-to-three-paced.zip",
+      "width": 24,
+      "height": 20,
+      "frame_count": 3,
+      "bytes": 27196791,
+      "sha256": "4fbf43608a98d01513285132d056506294c462c73e2bbaf82e9c66a515549956",
+      "assets": [
+        {
+          "filename": "count-to-three-paced.zip",
+          "bytes": 27196791,
+          "sha256": "4fbf43608a98d01513285132d056506294c462c73e2bbaf82e9c66a515549956"
+        }
+      ]
+    },
+    "count-fast": {
+      "filename": "count-to-three-fast.zip",
+      "width": 24,
+      "height": 20,
+      "frame_count": 3,
+      "bytes": 196791,
+      "sha256": "5b9a36adf01302252f91f66a1d48fd982394e13f5ff85f6180e54ecbd1a088a9",
+      "assets": [
+        {
+          "filename": "count-to-three-fast.zip",
+          "bytes": 196791,
+          "sha256": "5b9a36adf01302252f91f66a1d48fd982394e13f5ff85f6180e54ecbd1a088a9"
+        }
+      ]
+    }
+  }
+}

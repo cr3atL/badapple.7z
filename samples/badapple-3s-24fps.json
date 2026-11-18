@@ -1,0 +1,375 @@
+{
+  "source_url": "https://github.com/rkk-2s/bad-apple/blob/master/BadApple.mp4",
+  "width": 64,
+  "height": 48,
+  "target_fps": 24,
+  "target_seconds": 3.0,
+  "burn_groups_per_frame": 9250,
+  "frame_padding_bytes": 65536,
+  "frames": [
+    {
+      "number": 1,
+      "source_time": 30.0,
+      "output_bytes": 65536
+    },
+    {
+      "number": 2,
+      "source_time": 30.041666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 3,
+      "source_time": 30.083333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 4,
+      "source_time": 30.125,
+      "output_bytes": 65536
+    },
+    {
+      "number": 5,
+      "source_time": 30.166666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 6,
+      "source_time": 30.208333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 7,
+      "source_time": 30.25,
+      "output_bytes": 65536
+    },
+    {
+      "number": 8,
+      "source_time": 30.291666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 9,
+      "source_time": 30.333333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 10,
+      "source_time": 30.375,
+      "output_bytes": 65536
+    },
+    {
+      "number": 11,
+      "source_time": 30.416666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 12,
+      "source_time": 30.458333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 13,
+      "source_time": 30.5,
+      "output_bytes": 65536
+    },
+    {
+      "number": 14,
+      "source_time": 30.541666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 15,
+      "source_time": 30.583333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 16,
+      "source_time": 30.625,
+      "output_bytes": 65536
+    },
+    {
+      "number": 17,
+      "source_time": 30.666666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 18,
+      "source_time": 30.708333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 19,
+      "source_time": 30.75,
+      "output_bytes": 65536
+    },
+    {
+      "number": 20,
+      "source_time": 30.791666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 21,
+      "source_time": 30.833333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 22,
+      "source_time": 30.875,
+      "output_bytes": 65536
+    },
+    {
+      "number": 23,
+      "source_time": 30.916666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 24,
+      "source_time": 30.958333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 25,
+      "source_time": 31.0,
+      "output_bytes": 65536
+    },
+    {
+      "number": 26,
+      "source_time": 31.041666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 27,
+      "source_time": 31.083333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 28,
+      "source_time": 31.125,
+      "output_bytes": 65536
+    },
+    {
+      "number": 29,
+      "source_time": 31.166666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 30,
+      "source_time": 31.208333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 31,
+      "source_time": 31.25,
+      "output_bytes": 65536
+    },
+    {
+      "number": 32,
+      "source_time": 31.291666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 33,
+      "source_time": 31.333333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 34,
+      "source_time": 31.375,
+      "output_bytes": 65536
+    },
+    {
+      "number": 35,
+      "source_time": 31.416666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 36,
+      "source_time": 31.458333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 37,
+      "source_time": 31.5,
+      "output_bytes": 65536
+    },
+    {
+      "number": 38,
+      "source_time": 31.541666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 39,
+      "source_time": 31.583333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 40,
+      "source_time": 31.625,
+      "output_bytes": 65536
+    },
+    {
+      "number": 41,
+      "source_time": 31.666666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 42,
+      "source_time": 31.708333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 43,
+      "source_time": 31.75,
+      "output_bytes": 65536
+    },
+    {
+      "number": 44,
+      "source_time": 31.791666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 45,
+      "source_time": 31.833333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 46,
+      "source_time": 31.875,
+      "output_bytes": 65536
+    },
+    {
+      "number": 47,
+      "source_time": 31.916666666666668,
+      "output_bytes": 65536
+    },
+    {
+      "number": 48,
+      "source_time": 31.958333333333332,
+      "output_bytes": 65536
+    },
+    {
+      "number": 49,
+      "source_time": 32.0,
+      "output_bytes": 65536
+    },
+    {
+      "number": 50,
+      "source_time": 32.041666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 51,
+      "source_time": 32.083333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 52,
+      "source_time": 32.125,
+      "output_bytes": 65536
+    },
+    {
+      "number": 53,
+      "source_time": 32.166666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 54,
+      "source_time": 32.208333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 55,
+      "source_time": 32.25,
+      "output_bytes": 65536
+    },
+    {
+      "number": 56,
+      "source_time": 32.291666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 57,
+      "source_time": 32.333333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 58,
+      "source_time": 32.375,
+      "output_bytes": 65536
+    },
+    {
+      "number": 59,
+      "source_time": 32.416666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 60,
+      "source_time": 32.458333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 61,
+      "source_time": 32.5,
+      "output_bytes": 65536
+    },
+    {
+      "number": 62,
+      "source_time": 32.541666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 63,
+      "source_time": 32.583333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 64,
+      "source_time": 32.625,
+      "output_bytes": 65536
+    },
+    {
+      "number": 65,
+      "source_time": 32.666666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 66,
+      "source_time": 32.708333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 67,
+      "source_time": 32.75,
+      "output_bytes": 65536
+    },
+    {
+      "number": 68,
+      "source_time": 32.791666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 69,
+      "source_time": 32.833333333333336,
+      "output_bytes": 65536
+    },
+    {
+      "number": 70,
+      "source_time": 32.875,
+      "output_bytes": 65536
+    },
+    {
+      "number": 71,
+      "source_time": 32.916666666666664,
+      "output_bytes": 65536
+    },
+    {
+      "number": 72,
+      "source_time": 32.958333333333336,
+      "output_bytes": 65536
+    }
+  ],
+  "compressed_deflate_bytes": 34689347,
+  "uncompressed_bytes": 4718617,
+  "crc32": "3bd87b9b",
+  "archive_sha256": "8cb7974af32f0fac8d2ad5293e083e239a1bc302e8b4e5f1cbc831c647a51435"
+}
