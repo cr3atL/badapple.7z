@@ -28,7 +28,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\download-assets.ps1 -P
 .\play-full.cmd
 ```
 
-下载脚本会校验每个分块的 SHA-256，合并后再校验完整 ZIP。完整版约 **3.17 GiB**；默认保留下载分块，连同合并文件建议预留 **7 GiB** 空间。运行时不需要把 ZIP 解压到磁盘。
+下载脚本会校验下载包的 SHA-256，用原装 7-Zip 还原其中的播放 ZIP，再校验原 ZIP。完整版下载约 **8.4 MiB**，还原后约 **3.17 GiB**，建议预留 **4 GiB** 空间。实际播放时不需要把 ZIP 里的字符文件解压到磁盘。
+
+这里有两步：外层 `.playback.7z` 只是为了方便下载；准备完成后，真正负责播放的是里面的标准 ZIP。外层压缩不会改变播放 ZIP 的任何字节。
 
 完整版有 384 列、144 行字符，需要较小的终端字体。启动器会在经典控制台中尝试配置 Consolas 和窗口大小；Windows Terminal 的兼容接口可能忽略字体设置。如果提示无法容纳，在 Windows Terminal 中用 `Ctrl` + 鼠标滚轮缩小字体，直到至少 384 列、144 行，然后在项目目录运行：
 
@@ -40,12 +42,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\play.ps1 -Preset full 
 
 ## 下载内容
 
-| 版本 | 图像与帧数 | 文件大小 | 用途 |
-| --- | --- | --- | --- |
-| `full` | 384×288，6,572 帧 | 3,403,822,975 B | 完整 MV，目标约 30 fps |
-| `demo` | 64×48，72 帧 | 34,689,471 B | 三秒小样，目标 24 fps |
-| `count-paced` | 24×20，3 帧 | 27,196,791 B | 带空块的“数到 3” |
-| `count-fast` | 相同的 3 帧 | 196,791 B | 无空块对照 |
+| 版本 | 图像与帧数 | 下载大小 | 还原后的 ZIP | 用途 |
+| --- | --- | --- | --- | --- |
+| `full` | 384×288，6,572 帧 | 8,776,064 B | 3,403,822,975 B | 完整 MV，目标约 30 fps |
+| `demo` | 64×48，72 帧 | 15,269 B | 34,689,471 B | 三秒小样，目标 24 fps |
+| `count-paced` | 24×20，3 帧 | 4,809 B | 27,196,791 B | 带空块的“数到 3” |
+| `count-fast` | 相同的 3 帧 | 581 B | 196,791 B | 无空块对照 |
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\download-assets.ps1 -Preset comparison
@@ -55,7 +57,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\download-assets.ps1 -P
 
 也可用 `-Preset all` 下载全部版本。
 
-GitHub Release 的[单附件限制为 2 GiB](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)。完整版按原始字节切为 `.zip.001` 至 `.zip.004`，它们是同一个 ZIP 的分块。可把 Release 文件手动下载到 `downloads/`，再运行：
+也可以把 Release 中的 `.playback.7z` 文件手动下载到 `downloads/`，再离线准备：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\download-assets.ps1 -Preset full -Offline
@@ -136,9 +138,9 @@ python tools\build_long_demo.py --name my-full --width 384 --height 288 --start 
 ```text
 play-full.cmd / play-demo.cmd       原装解压播放入口
 play-count-*.cmd                    有无空块对照入口
-asset-manifest.json                Release 下载地址、分块及完整文件校验值
+asset-manifest.json                Release 下载地址、下载包及原始 ZIP 校验值
 tools/play.ps1                     播放前的终端配置与单次原装进程启动
-tools/download-assets.ps1          下载、合并与 SHA-256 校验
+tools/download-assets.ps1          下载、还原播放 ZIP 与 SHA-256 校验
 tools/build_demo.py                短样生成与 DEFLATE 基础结构
 tools/build_long_demo.py           流式长版生成
 tools/tool_paths.py                FFmpeg 路径发现

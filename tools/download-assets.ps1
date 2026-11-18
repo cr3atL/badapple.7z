@@ -1,7 +1,8 @@
 param(
     [ValidateSet('full','demo','comparison','count-paced','count-fast','all')][string]$Preset='full',
     [switch]$Offline,
-    [switch]$VerifyOnly
+    [switch]$VerifyOnly,
+    [string]$SevenZipPath
 )
 $ErrorActionPreference='Stop'
 $ProgressPreference='SilentlyContinue'
@@ -41,6 +42,26 @@ foreach ($key in $wanted) {
         $partPaths+=,$partPath
     }
     $partial=$target+'.partial'
+    if ($archive.container -eq '7z') {
+        if (-not $SevenZipPath) {$SevenZipPath=$env:SEVENZIP_BINARY}
+        if (-not $SevenZipPath) {
+            foreach ($candidate in @((Join-Path $env:ProgramFiles '7-Zip\7z.exe'),'7z.exe','7zz.exe')) {
+                $found=Get-Command $candidate -ErrorAction SilentlyContinue
+                if ($found) {$SevenZipPath=$found.Source;break}
+            }
+        }
+        if (-not $SevenZipPath) {throw 'Install stock 7-Zip before preparing playback data, or set SEVENZIP_BINARY.'}
+        $unpackDirectory=Join-Path $downloads ('expanded-'+$key)
+        New-Item -ItemType Directory -Force -Path $unpackDirectory|Out-Null
+        Write-Host "Restoring the original playback ZIP: $($archive.filename) ..."
+        & $SevenZipPath x -y -bd -bsp0 ('-o'+$unpackDirectory) $partPaths[0]
+        if ($LASTEXITCODE -ne 0) {throw '7-Zip could not unpack the download container.'}
+        $restored=Join-Path $unpackDirectory $archive.filename
+        if (-not (Confirm-File $restored $archive.sha256 $archive.bytes)) {throw 'Restored ZIP checksum failed.'}
+        Move-Item -LiteralPath $restored -Destination $target -Force
+        Write-Host "Ready: $target"
+        continue
+    }
     Write-Host "Assembling $($archive.filename) ..."
     $output=[IO.File]::Open($partial,[IO.FileMode]::Create,[IO.FileAccess]::Write,[IO.FileShare]::None)
     try {

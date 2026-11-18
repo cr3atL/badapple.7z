@@ -12,26 +12,12 @@
       "sha256": "75e8f29af0092e1223c4ef2b64e240729014e6c48fc0cfc46f5252c147541d20",
       "assets": [
         {
-          "filename": "badapple-full-384x288-30fps.zip.001",
-          "bytes": 1073741824,
-          "sha256": "7084731a0111d1285207c3c23647dea37d6b2cb1b71bb4b2e6f00760facfc5cc"
-        },
-        {
-          "filename": "badapple-full-384x288-30fps.zip.002",
-          "bytes": 1073741824,
-          "sha256": "fb17e0615fe7144a2ec3cc40ecbc55e7da1ae6e7886a8f99a296e7cfd058a4f2"
-        },
-        {
-          "filename": "badapple-full-384x288-30fps.zip.003",
-          "bytes": 1073741824,
-          "sha256": "4bcbba5fa137e383b9909cbae7afbbeb7d50d374de1d6e4da4bfd984ce93d5bf"
-        },
-        {
-          "filename": "badapple-full-384x288-30fps.zip.004",
-          "bytes": 182597503,
-          "sha256": "4aeec50c819180e130cd2b209ac76a464c045840fcb68850a149e74bdabca3fc"
+          "filename": "badapple-full-384x288-30fps.playback.7z",
+          "bytes": 8776064,
+          "sha256": "8ba330a7d9ae8748e0b40ce95244540f0a1ce77eeeeb1ee71c8618d2e8d35592"
         }
-      ]
+      ],
+      "container": "7z"
     },
     "demo": {
       "filename": "badapple-3s-24fps.zip",
@@ -42,11 +28,12 @@
       "sha256": "8cb7974af32f0fac8d2ad5293e083e239a1bc302e8b4e5f1cbc831c647a51435",
       "assets": [
         {
-          "filename": "badapple-3s-24fps.zip",
-          "bytes": 34689471,
-          "sha256": "8cb7974af32f0fac8d2ad5293e083e239a1bc302e8b4e5f1cbc831c647a51435"
+          "filename": "badapple-3s-24fps.playback.7z",
+          "bytes": 15269,
+          "sha256": "1193a44b9687675af40c0c5d546af3fe0dee14a5cf3976ff17eb86446ac0a68e"
         }
-      ]
+      ],
+      "container": "7z"
     },
     "count-paced": {
       "filename": "count-to-three-paced.zip",
@@ -57,11 +44,12 @@
       "sha256": "4fbf43608a98d01513285132d056506294c462c73e2bbaf82e9c66a515549956",
       "assets": [
         {
-          "filename": "count-to-three-paced.zip",
-          "bytes": 27196791,
-          "sha256": "4fbf43608a98d01513285132d056506294c462c73e2bbaf82e9c66a515549956"
+          "filename": "count-to-three-paced.playback.7z",
+          "bytes": 4809,
+          "sha256": "4f4e47d06075c06156341fe7e1b2b9153c7cb6ea4fa542ed03925a563661abfc"
         }
-      ]
+      ],
+      "container": "7z"
     },
     "count-fast": {
       "filename": "count-to-three-fast.zip",
@@ -72,11 +60,12 @@
       "sha256": "5b9a36adf01302252f91f66a1d48fd982394e13f5ff85f6180e54ecbd1a088a9",
       "assets": [
         {
-          "filename": "count-to-three-fast.zip",
-          "bytes": 196791,
-          "sha256": "5b9a36adf01302252f91f66a1d48fd982394e13f5ff85f6180e54ecbd1a088a9"
+          "filename": "count-to-three-fast.playback.7z",
+          "bytes": 581,
+          "sha256": "5fb24f6537690c66feab6e6486bb465e9ff3d7f67e251f69ffdc104405544858"
         }
-      ]
+      ],
+      "container": "7z"
     }
   }
 }
